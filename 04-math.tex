@@ -67,26 +67,32 @@ N_f(z,\vec{r},\vec{\Theta},E)=\frac{\delta[z-s(E,z)]}{[\pi \bar{\varepsilon}(E,z
 
 где
 
+\begin{equation}
+C_k(z)=2 \int_{E}{E_0} \frac{w_{sa,tr}(E',z)[z-s(E',z)]^k}{\bar{\varepsilon}(E',z)} dE',\>\> к=0,1,2.,
+\label{eq:7}
+\end{equation}
 
+\begin{equation}
+\sigma^2(z)=C_0(z)C_2(z)-C_1^2(z),
+\label{eq:8}
+\end{equation}
 
-Функция s(E, z) имеет смысл среднего пути электрона, сохраняющего первоначальное
-направление вдоль оси z, когда его энергия уменьшается от значения E0 в точке z=0 до E
-на глубине z.
-Плотность потока диффузного компонента N d ( z, r , Ω, E ) является решением
+\begin{equation}
+s(E,z)=\sum_{i=1}^{n} \int_{E}^{E_0} \frac{\chi_i}{\bar{\varepsilon}(E',z)} dE',
+\label{eq:9}
+\end{equation}
+
+Функция $s(E, z)$ имеет смысл среднего пути электрона, сохраняющего первоначальное
+направление вдоль оси $z$, когда его энергия уменьшается от значения $E_0$ в точке $z=0$ до $E$
+на глубине $z$.
+Плотность потока диффузного компонента $N_d(z,\vec{r},\vec{\Omega},E)$ является решением
 уравнения [2]
-∂
-[ε ( E , z )N d ( z, r , Ω, E )] + Ω∇N d ( z, r , Ω, E ) =
-−
-∂E
-1
-dΩ′wtr ( E , z )[N d ( z, Ω′, E ) − N d ( z, r Ω, E )] + .
-(10)
-=
-4π ∫
-1
-wtr ( E , z )∫ dΩ′N f ( z, r ′, Ω′, E )
-+
-4π
+
+\begin{equation}
+-\frac{\partial}{\partial E}[\bar{\varepsilon}(E,z)N_d(z,\vec{r},\vec{\Omega},E)]+\vec{\Omega} \bigtriangledown N_d (z,\vec{r},\vec{\Omega},E)=\frac{1}{4\pi} \int d\vec{\Omega}'W_{tr}(E,z)[N_d(z,\vec{\Omega}',E)-N_d(z,\vec{r},\vec{\omega},E)]+\frac{1}{4\pi}w_{tr}(E,z) \int d\vec{\Omega}'N_f()(z,\vec{r}',\vec{\Omega}',E),
+\label{eq:10}
+\end{equation}
+
 Используя аналитическое решение (6) и численное решение уравнения (10), мы
 можем определить любые дифференциальные и интегральные характеристики переноса
 электронов в мишени. Расчеты распределений обратно рассеянных и прошедших
@@ -94,37 +100,39 @@ wtr ( E , z )∫ dΩ′N f ( z, r ′, Ω′, E )
 плотности поглощенной энергии электронов.
 Учитывая аксиальную симметрию задачи, представим плотность поглощенной
 энергии в виде
-E0
-(11)
-W ( z, r ) = ∫ dE ε ( E , z )∫ dΩN ( z, r , ΩE ) = W f ( z, r ) + W d ( z, r ) ,
-0
+
+\begin{equation}
+W(z,r)=\int_{0}^{E_0} dE\vac{\varepsilon}(E,z) \int d\vec{\Omega}E(z,\vec{r},\vec{\Omega},E)=W_f(z,r)+W_d(z,r),
+\label{eq:11}
+\end{equation}
 где
-E0 0 
-(13)
-1 −1 E0 
-(12)
-1 E0
-−1 0
-W f ( z, r ) = ∫ dE ε ( E , z )2π ∫ d (cosθ )N f ( z, r,θ , E ) ,
-W d ( z, r ) = ∫ dE ε ( E , z ) 2π ∫ d (cosθ )N d ( z, r,θ , E ) = ∫ dE ε ( E , z )N d 0 ( z, r, E ) ,
-0
-1
-(14)
-N d 0 ( z, r, E ) = 2π ∫ d (cosθ )N d ( z, r,θ , E ) .
-−1
-Здесь использована цилиндрическая система координат,
-r = r
+
+\begin{equation}
+W(z,r)=\int_{0}^{E_0} dE\bar{\varepsilon}(E,z)2\pi \int_{-1}{1} d(\cos \Theta)N_f(z,r,\Theta ,E),
+\label{eq:12}
+\end{equation}
+
+\begin{equation}
+W_{d}(z,r)=\int_{0}^{E_0} dE\bar{\epsilon}(E,z)2\pi \int_{-1}^{1} d(\cos \Theta)N_d(z,r,\Theta ,E)=\int_{0}^{E_0}dE\vec{\varepsilon}(E,z)N_{d0}(z,r,E),
+\label{eq:13}
+\end{equation}
+
+\begin{equation}
+N_{do}(z,r,E)=2\pi \int_{-1}{1} d(\cos \Theta)N_d(z,r,\Theta,E),
+\label{eq:14}
+\end{equation}
+
+Здесь использована цилиндрическая система координат,$r=|\vec{r}|$
 — радиальное
-расстояние, θ — угол между осью z и вектором Ω .
+расстояние, $\Theta$ — угол между осью $z$ и вектором $\vec{\Omega}$ .
 Используя (6) и выполняя интегрирование в (12), получаем гауссиан
-W f ( z, r ) = A f ( z )exp r 2 σ 2 ( z ) πσ 2 ( z ) ,
-(15)
-f
-f
-(
-)(
-)
-с полушириной σ f ( z ) = C 2 ( z ) и амплитудой
+
+\begin{equation}
+W_f(z,r)=\frac{A_f(z)}{\pi \sigma_f^2(z)} \exp \left(\frac{r^2}{\sigma_f^2(z)}\right),
+\label{eq:15}
+\end{equation}
+
+с полушириной $\sigma_f(z)=\sqrt{C_2 (z)}$ и амплитудой
 E0
  E0
 
