@@ -68,11 +68,14 @@
 \captionsetup{labelsep=period}
 
 \begin{document}
-\input{01-title}% это титульный лист
 \onehalfspacing
+\input{01-title}% это титульный лист
 \input{02-referat}
+\pagestyle{empty}
+\renewcommand{\contentsname}{\begin{center}Содержание\end{center}}
 \tableofcontents % это оглавление, которое генерируется автоматически
 % \input{03-abbreviations}
+\pagestyle{plain}
 \input{04-intro}
 \newpage
 \input{05-text}
