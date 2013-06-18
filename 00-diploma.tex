@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{extreport} %размер бумаги устанавливаем А4, шрифт 12пунктов
+\documentclass[a4paper,14pt]{extreport} %размер бумаги устанавливаем А4, шрифт 12пунктов
 \usepackage[T2A]{fontenc}
 \usepackage[utf8x]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows
 \usepackage[english,russian]{babel}%используем русский и английский языки с переносами
@@ -6,6 +6,12 @@
 \usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
 \usepackage{graphicx} %хотим вставлять в диплом рисунки?
 \graphicspath{{images/},{plots/}}%путь к рисункам
+\usepackage{times}
+\usepackage{multicol, multirow, array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
+\renewcommand{\arraystretch}{1.2}
+
+\renewcommand{\rmdefault}{ftm}
 
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
@@ -62,10 +68,13 @@
 \captionsetup{labelsep=period}
 
 \begin{document}
-% \input{01-title}% это титульный лист
+\input{01-title}% это титульный лист
 \tableofcontents % это оглавление, которое генерируется автоматически
 \input{02-intro}
+\newpage
 \input{03-text}
+\newpage
 \input{04-math}
-\input{06-lit}
+\newpage
+% \input{06-lit}
 \end{document}
