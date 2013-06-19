@@ -13,10 +13,6 @@
 \usepackage{times}
 \renewcommand{\rmdefault}{ftm}
 
-\makeatletter
-\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
-\makeatother
-
 \usepackage{geometry} % Меняем поля страницы
 \geometry{left=2cm}% левое поле
 \geometry{right=1.5cm}% правое поле
@@ -57,8 +53,8 @@
 
 \usepackage[square, numbers, sort&compress]{natbib}
 \makeatletter
-\bibliographystyle{unsrt}
-\renewcommand{\@biblabel}[1]{#1.} 
+% \bibliographystyle{srt}
+\renewcommand{\@biblabel}[1]{#1} 
 \makeatother
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
