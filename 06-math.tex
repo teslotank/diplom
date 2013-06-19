@@ -24,23 +24,20 @@
 электронов с начальной энергией $E_0$ не происходит слишком большого усложнения
 задачи, и она остается в пределах возможностей применяемых аналитических и
 численных методов. Плотность потока электронов в среде также представляется в виде
-суммы
-(1)
+суммы~\ref{eq:1}
 \begin{equation}
 N(z,\vec{r},\vec{\Omega},E)=N_f (z,\vec{r},\vec{\Omega},E)+N_d (z,\vec{r},\vec{\Omega},E),
 \label{eq:1}
 \end{equation}
-где $N_f$ и $N_d$ – плотности потока электронов, сохраняющих направление и
+где $N_f$ и $N_d$~-- плотности потока электронов, сохраняющих направление и
 диффундирующих, ось $z$ с началом в точке падения пучка направлена в глубину мишени,
-$\vec{r}$ – вектор, ортогональный оси $z$, $\vec{\Omega}$ – направление скорости и $E$ – энергия электронов.
+$\vec{r}$~-- вектор, ортогональный оси $z$, $\vec{\Omega}$~-- направление скорости и $E$~-- энергия электронов.
 Для функции $N_f$ было получено аналитическое решение в однородном слое \cite{smolar2} и в
 многослойной структуре \cite{smolar}. Здесь мы запишем аналитическое решение для $N_f$ в
 многослойной мишени в несколько иной форме. Транспортная частота и средние потери
 энергии в такой мишени являются ступенчатыми функциями относительно переменной $z$
-и могут быть представлены с помощью характеристических функций $\chi_i(E)$ i-того слоя –
+и могут быть представлены с помощью характеристических функций $\chi_i(E)$ i-того слоя~-- 
 произведения единичных ступенчатых функций Хевисайда $U(x)$
-
-
 \begin{equation}
 \bar{\varepsilon}(E,z)=\sum_{i=1}^n \chi_i (E)\bar{\varepsilon}^{(i)} (E),
 \label{eq:2}
@@ -57,8 +54,8 @@ W_{sa,tr}(E,z)=\sum_{i=1}^n \chi_i (E)W_{sa,tr}^{(i)} (E),
 \end{equation}
 где
 $ \chi_i(E)=U(E_{i-1}-E)U(E-E_i) $,
-$Ei$ – энергия прямоидущих электронов на правой границе i-того слоя, $W_tr(E,z)$ –
-транспортная частота столкновений, $\bar{\varepsilon}(E,z)$ – потеря энергии на единицу пробега, $W_{sa,tr}(E,z)$ – малоугловой компонент частоты столкновений.
+$Ei$~-- энергия прямоидущих электронов на правой границе i-того слоя, $W_tr(E,z)$~-- 
+транспортная частота столкновений, $\bar{\varepsilon}(E,z)$~-- потеря энергии на единицу пробега, $W_{sa,tr}(E,z)$~-- малоугловой компонент частоты столкновений.
 Плотность малоуглового компонента потока имеет вид \cite{smolar}
 
 %эту формулу в 3 этажа можно ибо не влезает в лист
@@ -69,7 +66,7 @@ N_f(z,\vec{r},\vec{\Theta},E)=\frac{\delta[z-s(E,z)]}{[\pi \bar{\varepsilon}(E,z
 \end{gather}
 где
 \begin{equation}
-C_k(z)=2 \int_{E}{E_0} \frac{w_{sa,tr}(E',z)[z-s(E',z)]^k}{\bar{\varepsilon}(E',z)} dE',\>\> к=0,1,2.,
+C_k(z)=2 \int_{E}{E_0} \frac{w_{sa,tr}(E',z)[z-s(E',z)]^k}{\bar{\varepsilon}(E',z)} dE',\ k=0,1,2.,
 \label{eq:7}
 \end{equation}
 
@@ -79,7 +76,7 @@ C_k(z)=2 \int_{E}{E_0} \frac{w_{sa,tr}(E',z)[z-s(E',z)]^k}{\bar{\varepsilon}(E',
 \end{equation}
 
 \begin{equation}
-s(E,z)=\sum_{i=1}^{n} \int_{E}^{E_0} \frac{\chi_i}{\bar{\varepsilon}(E',z)} dE',
+s(E,z)=\sum_{i=1}^{n} \int_{E}^{E_0} \frac{\chi_i}{\bar{\varepsilon}(E',z)} dE'.
 \label{eq:9}
 \end{equation}
 
@@ -91,25 +88,22 @@ s(E,z)=\sum_{i=1}^{n} \int_{E}^{E_0} \frac{\chi_i}{\bar{\varepsilon}(E',z)} dE',
 
 \begin{gather}
 -\frac{\partial}{\partial E}[\bar{\varepsilon}(E,z)N_d(z,\vec{r},\vec{\Omega},E)]+\vec{\Omega} \bigtriangledown N_d (z,\vec{r},\vec{\Omega},E)= \nonumber \\
-\frac{1}{4\pi} \int d\vec{\Omega}'W_{tr}(E,z)[N_d(z,\vec{\Omega}',E)-N_d(z,\vec{r},\vec{\omega},E)]+\frac{1}{4\pi}w_{tr}(E,z) \int d\vec{\Omega}'N_f(z,\vec{r}',\vec{\Omega}',E),
+\frac{1}{4\pi} \int d\vec{\Omega}'W_{tr}(E,z)[N_d(z,\vec{\Omega}',E)-N_d(z,\vec{r},\vec{\omega},E)]+\frac{1}{4\pi}w_{tr}(E,z) \int d\vec{\Omega}'N_f(z,\vec{r}',\vec{\Omega}',E).
 \label{eq:10}
 \end{gather}
 
-
-Используя аналитическое решение (6) и численное решение уравнения (10), мы
+Используя аналитическое решение~\ref{eq:6} и численное решение уравнения~\ref{eq:10}, мы
 можем определить любые дифференциальные и интегральные характеристики переноса
 электронов в мишени. Расчеты распределений обратно рассеянных и прошедших
 электронов обсуждались ранее \cite{smolar}. В настоящей работе мы рассмотрим распределение
 плотности поглощенной энергии электронов.
 Учитывая аксиальную симметрию задачи, представим плотность поглощенной
 энергии в виде
-
 \begin{equation}
 W(z,r)=\int_{0}^{E_0} dE\bar{\varepsilon}(E,z) \int d\vec{\Omega}E(z,\vec{r},\vec{\Omega},E)=W_f(z,r)+W_d(z,r),
 \label{eq:11}
 \end{equation}
 где
-
 \begin{equation}
 W(z,r)=\int_{0}^{E_0} dE\bar{\varepsilon}(E,z)2\pi \int_{-1}{1} d(\cos \Theta)N_f(z,r,\Theta ,E),
 \label{eq:12}
@@ -121,34 +115,33 @@ W_{d}(z,r)=\int_{0}^{E_0} dE\bar{\epsilon}(E,z)2\pi \int_{-1}^{1} d(\cos \Theta)
 \end{equation}
 
 \begin{equation}
-N_{do}(z,r,E)=2\pi \int_{-1}{1} d(\cos \Theta)N_d(z,r,\Theta,E),
+N_{do}(z,r,E)=2\pi \int_{-1}{1} d(\cos \Theta)N_d(z,r,\Theta,E).
 \label{eq:14}
 \end{equation}
 
 Здесь использована цилиндрическая система координат,$r=|\vec{r}|$ -- радиальное
 расстояние, $\Theta$ — угол между осью $z$ и вектором $\vec{\Omega}$ .
-Используя (6) и выполняя интегрирование в (12), получаем гауссиан
+Используя~\ref{eq:6} и выполняя интегрирование в~\ref{eq:12}, получаем гауссиан
 \begin{equation}
 W_f(z,r)=\frac{A_f(z)}{\pi \sigma_f^2(z)} \exp \left(\frac{r^2}{\sigma_f^2(z)}\right),
 \label{eq:15}
 \end{equation}
-
-с полушириной $\sigma_f(z)=\sqrt{C_2 (z)}$ и амплитудой
+полуширина которого $\sigma_f(z)=\sqrt{C_2 (z)}$, а амплитуда
 \begin{equation}
-A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\frac{w_{tr} ( E′, z)}{\bar{\varepsilon}(E′, z)}dE′\right) dE
+A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\frac{w_{tr} ( E′, z)}{\bar{\varepsilon}(E′, z)}dE′\right) dE.
 \end{equation}
 Используя представление двумерной \(\delta\)-функции с помощью последовательности непрерывных функций \cite{korn}
 \begin{equation}
-\delta(\vec{r}) = \lim_{\sigma\rightarrow0} \frac{\exp\left(−\frac{r^2}{\sigma^2}\right)}{\pi\sigma^2}
+\delta(\vec{r}) = \lim_{\sigma\rightarrow0} \frac{\exp\left(−\frac{r^2}{\sigma^2}\right)}{\pi\sigma^2},
 \end{equation}
-из (16) получаем
+из~\ref{eq:16} получаем
 \begin{equation}
-\lim_{z\rightarrow0} W_f(z, r) = A_f(0)\delta(\vec{r}),
+\lim_{z\rightarrow0} W_f(z, r) = A_f~\ref{eq:0}\delta(\vec{r}),
 \end{equation}
 так что распределение \( W_f(z, r) \) является сингулярным вблизи точки падения
 электронного пучка. Отметим, что
 \begin{equation}
-    A_f(0) = \bar{\varepsilon}(E=0, z=0).    
+    A_f~\ref{eq:0} = \bar{\varepsilon}(E=0, z=0).    
 \end{equation}
 Плотность поглощенной энергии диффузного компонента \(W_d(z, r)\) может быть
 рассчитана с помощью функции \(N_{d0}(z, r, E),\) которая является решением краевой задачи.
@@ -175,13 +168,13 @@ A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\
 \begin{equation}
 B(\tau, z) = −\frac{1}{w_{tr}(\tau, z)}\sum_{i=1}^{n} \bar{\varepsilon} −1 (\tau ,\xi_i ) \delta ( z − \xi i ) ,    
 \end{equation}
-где \(\bar{\varepsilon}^{−1}\) обозначает скачек
+где \(\bar{\varepsilon}^{−1}\) обозначает скачок
 \begin{equation}
     \bar{\varepsilon}^{−1} (\tau ,\xi_i ) = \bar{\varepsilon}^{−1} (\tau,\xi_i + 0 ) − \bar{\varepsilon}^{−1} (\tau ,\xi_i − 0 ).
 \end{equation}
 
 В однослойной мишени имеем \( B(\tau,z)=0 \).
-Уравнение (20) должно быть решено в области
+Уравнение~\ref{eq:20} должно быть решено в области
 \begin{equation}
     (z, r,\tau) \in [0, z_\text{макс}]\times [0, r_\text{макс} ]\times[0, E_0],    
 \end{equation}
