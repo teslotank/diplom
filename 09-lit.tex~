@@ -1,0 +1,123 @@
+\addcontentsline{toc}{chapter}{Список использованной литературы}
+\>\>\>\>\>\> 
+\def\bibname{СИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+\begin{thebibliography}{99}  
+
+\bibitem{zheng-ming} Zheng-ming,~L. Improved bipartitition model of electron
+transport. II. Application to inhomogeneoue media / L.~Zheng-ming.~-- Phys. Rev. B:
+Condens. Matter. 1985. V.~32, N~2. P.~824--836.
+
+\bibitem{smolar} Smolar,~V. Backscattering and transmission for normal
+incidence of electrons in small-angle and transport approximation /
+V.~Smolar.~-- Vacuum. 1994. V.~45, N~6. P.~609--615.
+
+\bibitem{mikheev} Михеев,~Н.~П. Транспортно-диффузионное приближение в теории
+переноса электронов / Н.~П.~Михеев, В.~А.~Смоляр.~// Украинский физический
+журнал. 1985. Т.~30, вып.~1. С.~140--143.
+
+\bibitem{smolar1} Смоляр,~В.~А. Транспортно-малоугловое приближение в теории
+переноса электронов средних энергий / В.~А.~Смоляр.~// Украинский физический
+журнал. 1988. Т.~33, вып.~7. С.~1072--1077.
+
+\bibitem{smolar2} Smolar,~V. Electron backscattering and penetration in the
+small-angle and transport approximation model / V.~Smolar.~// Vacuum. 1990.
+V.~41, N~7--9. P.~1718.--1720.
+
+\bibitem{keiz} Кейз,~К. Линейная теория переноса / К.~Кейз, П.~Цвайфель.~--
+М.:~Мир, 1972.~-- 384~c.
+
+\bibitem{korn} Корн,~Г. Справочник по математике для научных работников и
+инженеров /  Г.~Корн, Т.~Корн.~-- М.:~Наука, 1968.~-- 720~c.
+
+\bibitem{smolar3} Смоляр,~В.~А. / В.~А.~Смоляр.~// Украинский физический журнал.
+1982. Т.~27, вып.~10. С.~1537. % не нашел статью
+
+%литра с дипломника
+
+\bibitem{1} Reimer,~L. Scanning Electron Microscopy: Physics of Image Formation
+and Microanalysis. / L.~Reimer.~// N.~Y.~:~Springer, 2010.~-- 527~p.
+
+\bibitem{2} Практическая растровая электронная микроскопия / Под ред.
+Дж.~Гоулдстейна, Х.~Яковица.~-- М.:~Мир, 1978.~-- 656~с.
+
+\bibitem{3} Растровый электронный микроскоп : учеб.~-- метод. пособие /
+А.~В.~Заболоцкий А.С. [и др.].~-- М.:~Изд-во~МФТИ, 2007.~--
+52~с. %Батурин, Е.А. Тишин, А.А. ЧуприкЪ
+
+\bibitem{4} Kyser,~D.~F. Monte Carlo simulation of spatially
+distributed beams in electron-beam lithography / D.~F.~Kyser,
+N.~S.~Viswanathan.~// Journal of Vacuum Science \& Technology B. 1975 V.~12,
+N~6. P.~1305--1308.
+
+\bibitem{5} Mankewich,~P.~M. Measurements of electron range and scattering in
+high voltage e-beam lithography / P.~M.~Mankewich, L.~D.~Jackel,
+R.~E.~Howard.~// Journal of Vacuum Science \& Technology B. 1985. V.~3, N~3.
+P.~174--176.
+
+\bibitem{6} An image processing approach to fast, efficient proximity correction for
+electron beam lithography / D.~Chow, [и др.] ~// Journal of Vacuum Science \& Technology B. 1983.
+V.~1, N~4. P.~1383--1390.%J.~McDonald, D.~King, W.~Smith,
+%K.~Molnair, A.~Steckl.
+
+\bibitem{7} Accuracy of proximity correction in electron lithography after
+development / V.~V.~Aristov, [и др.]~// Journal of Vacuum Science \& Technology B. V.~10,
+N~6. P.~2459--2467.
+%B.~N.~Gaifullin, A.~A.~Svintsov, S.~I.~Zaitsev,
+%R.~R.~Jede, H.~F.~Raith.
+\bibitem{8} Aristov,~V.~V. Guaranteed accuracy of the method of <<simple>>
+compensation in electron lithography / V.~V.~Aristov, A.~A.~Svintsov,
+S.~I.~Zaitsev.~// Microelectronic Engineering. 1990. V.~11, Issues~1--4.
+P.~641--644.
+
+\bibitem{9} Evaluation, verification and error determination of proximity
+parameters (alpha, beta and eta) in electron beam lithography / S.~V.~Dubonos [и~др.]~// Microelectronic
+Engineering. 1993. V.~21. P.~293--296.%,
+%B.~N.~Gaifullin, H.~F.~Raith, A.~A.~Svintsov, S.~I.~Zaitsev.
+
+\bibitem{10} Друкарёв,~Г.~Ф. Столкновение электронов с атомами и молекулами /
+Г.~Ф.~Друкарёв.~-- М.:~Наука, 1978.~-- 255~с.
+
+\bibitem{11} Joy,~D.~C. Monte Carlo Modeling for Electron Microscopy and
+Microanalysis / D.~C.~Joy.~-- Oxford University Press, 1995.~-- 224~p.
+
+\bibitem{12} Бёте,~Г. Квантовая механика / Г.~Бёте.~-- М.:~Мир, 1965.~-- 333~с.
+
+\bibitem{13} Ландау,~Л.~Д. Курс теоретической физики : учеб. пособ. для вузов.
+В 10 т. Том III. Квантовая механика (нерелятивистская теория).~--
+6-е~изд.,~испр. / Л.~Д.~Ландау, Е.~М.~Лившиц.~-- М.:~ФИЗМАТЛИТ, 2004.~-- 800~с.
+
+\bibitem{14} Deckert,~C.~A. Optimization of thin film wetting and adhesion
+behavior / C.~A.~Deckert, D.~A.~Peters.~// Thin solid films. 1980. V.~68,
+Issue~2. P.~417--420.
+
+\bibitem{15} Моро,~У. Микролитография. Принципы, методы, материалы. В двух
+томах / У.~Моро.~-- М.:~Мир, 1990.~-- 1240~с.
+
+\bibitem{16} Blais,~P.~D. Edge acuity and resolution in positive type photo-.
+resist systems / P.~D.~Blais.~ // Solid-state Technologies. 1977. V.~20.
+P.~76--79.
+
+\bibitem{17} Frish,~H. Sorption and transport in glassy polymers-a review /
+H.~Frish.~// Polymer Engineering \& Science. 1980. V.~20, Issue~1. P.~2--13.
+
+\bibitem{18} Chen,~S. Fickian diffusion of alkanes through glassy polymers:
+Effects of temperature, diffusant size, and polymer structure / S.~Chen,
+J.~Edin.~// Polymer Engineering \& Science. 1980. V.~20, Issue~1. P.~40--50.
+
+\bibitem{19} Park,~G. Diffusion in Polymers / G.~Park; edited by J. Crank.~//
+N.~Y.:~Academic Press, 1968. Ch.~5. P.~140--162.
+
+\bibitem{20} Thomas,~L. A theory of case II diffusion / L.~Thomas,
+J.~Windle.~// Polymer. 1982. V.~23, Issue~4. P.~529--542.
+
+\bibitem{21} Ueberreiter,~K. Diffusion in Polymers / K.~Ueberreiter; edited by
+J.~Crank, G.~Park.~// N.~Y.~:~Academic Press, 1968. Ch.~5. P.~219--257.
+
+\bibitem{22} Ueberreiter,~K. Velocity of dissolution of polystyrene /
+K.~Ueberreiter, F.~Asmussen.~// Journal of Polymer Science. 1957. V.~23,
+Issue~103. P.~75--81.
+
+\bibitem{23} Handbook of Microlithography, Micromachining and Microfabrication
+/ edited by P.~Rai-Choudhury.~-- Washington:~SPIE Press, 1997.~-- 768~p.
+
+\end{thebibliography}

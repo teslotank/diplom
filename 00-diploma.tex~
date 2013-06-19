@@ -1,0 +1,87 @@
+\documentclass[a4paper,14pt]{extreport} %размер бумаги устанавливаем А4, шрифт 12пунктов
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows
+\usepackage[english,russian]{babel}%используем русский и английский языки с переносами
+\usepackage{indentfirst}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
+\usepackage{graphicx} %хотим вставлять в диплом рисунки?
+\graphicspath{{images/},{plots/}}%путь к рисункам
+
+\usepackage{multicol, multirow, array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{times}
+\renewcommand{\rmdefault}{ftm}
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\makeatother
+
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=2cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+\geometry{top=1cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+
+\usepackage{setspace}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+    {\normalsize\bfseries}
+    {\thechapter}
+    {1em}{}
+
+\titleformat{\section}
+    {\normalsize\bfseries}
+    {\thesection}
+    {1em}{}
+
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {\thesubsection}
+    {1em}{}
+
+% Настройка вертикальных и горизонтальных отступов
+\titlespacing*{\chapter}{\parindent}{*4}{*1}
+\titlespacing*{\section}{\parindent}{*4}{*1}
+\titlespacing*{\subsection}{\parindent}{*4}{*1}
+
+\renewcommand{\theenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumi}{\arabic{enumi}.}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumii}{.\arabic{enumii}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
+
+
+\usepackage[square, numbers, sort&compress]{natbib}
+\makeatletter
+\bibliographystyle{unsrt}
+\renewcommand{\@biblabel}[1]{#1.} 
+\makeatother
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
+\renewcommand{\arraystretch}{1.2}
+
+\usepackage{caption}
+\captionsetup{labelsep=period}
+
+\begin{document}
+\input{01-title}% это титульный лист
+\onehalfspacing
+\input{02-referat}
+\tableofcontents % это оглавление, которое генерируется автоматически
+% \input{03-abbreviations}
+\input{04-intro}
+\newpage
+\input{05-text}
+\newpage
+\input{06-math}
+\newpage
+% \input{07-main}
+\newpage
+% \input{08-conclusion}
+\newpage
+% \input{09-lit}
+\end{document}
