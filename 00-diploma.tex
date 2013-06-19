@@ -13,10 +13,6 @@
 \usepackage{times}
 \renewcommand{\rmdefault}{ftm}
 
-\makeatletter
-\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
-\makeatother
-
 \usepackage{geometry} % Меняем поля страницы
 \geometry{left=2cm}% левое поле
 \geometry{right=1.5cm}% правое поле
@@ -26,7 +22,11 @@
 \usepackage{setspace}
 
 \usepackage{titlesec}
-
+\usepackage[square, numbers, sort&compress]{natbib}
+\makeatletter
+% \bibliographystyle{srt}
+\renewcommand{\@biblabel}[1]{#1} 
+\makeatother
 \titleformat{\chapter}
     {\normalsize\bfseries}
     {\thechapter}
@@ -41,7 +41,10 @@
     {\normalsize\bfseries}
     {\thesubsection}
     {1em}{}
-
+\renewcommand{\bibsection}{%
+    \titleformat{\chapter} {\normalfont\filcenter}{}{}{}
+    \titlespacing*{\chapter}{\parindent}{*4}{*1}
+    \chapter*{ \bibname \markboth{\bibname}{\bibname}}  }
 % Настройка вертикальных и горизонтальных отступов
 \titlespacing*{\chapter}{\parindent}{*4}{*1}
 \titlespacing*{\section}{\parindent}{*4}{*1}
@@ -53,13 +56,6 @@
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
-
-
-\usepackage[square, numbers, sort&compress]{natbib}
-\makeatletter
-\bibliographystyle{unsrt}
-\renewcommand{\@biblabel}[1]{#1.} 
-\makeatother
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
 \renewcommand{\arraystretch}{1.2}

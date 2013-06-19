@@ -62,13 +62,12 @@ $Ei$ – энергия прямоидущих электронов на пра�
 Плотность малоуглового компонента потока имеет вид \cite{smolar}
 
 %эту формулу в 3 этажа можно ибо не влезает в лист
-\begin{equation}
-N_f(z,\vec{r},\vec{\Theta},E)=\frac{\delta[z-s(E,z)]}{[\pi \bar{\varepsilon}(E,z)\sigma^2(z)]}\times \exp \frac{[\frac{(-\vec{\Theta}^2 C_2(z)-\vec{r}^2C_0 (z)+2(\vec{r}\vec{\Theta})C_1(z))}{\sigma^2(z)}]}{[\pi\sigma^2(z)]} \times \exp\left(-\int_{E}^{E_0} \frac{w_{tr}(E',z)}{\bar{\varepsilon}(E',z)}dE'\right),
+\begin{gather}
+N_f(z,\vec{r},\vec{\Theta},E)=\frac{\delta[z-s(E,z)]}{[\pi \bar{\varepsilon}(E,z)\sigma^2(z)]}\times\nonumber\\
+\times \exp \frac{[\frac{(-\vec{\Theta}^2 C_2(z)-\vec{r}^2C_0 (z)+2(\vec{r}\vec{\Theta})C_1(z))}{\sigma^2(z)}]}{[\pi\sigma^2(z)]} \times \exp\left(-\int_{E}^{E_0} \frac{w_{tr}(E',z)}{\bar{\varepsilon}(E',z)}dE'\right),
 \label{eq:6}
-\end{equation}
-
+\end{gather}
 где
-
 \begin{equation}
 C_k(z)=2 \int_{E}{E_0} \frac{w_{sa,tr}(E',z)[z-s(E',z)]^k}{\bar{\varepsilon}(E',z)} dE',\>\> к=0,1,2.,
 \label{eq:7}
@@ -154,7 +153,7 @@ A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\
 Плотность поглощенной энергии диффузного компонента \(W_d(z, r)\) может быть
 рассчитана с помощью функции \(N_{d0}(z, r, E),\) которая является решением краевой задачи.
 Введя для удобства новую переменную \(\tau=E_0-E\) -- остаточную энергию электронов,
-представим задачу для функции \(N_{d0}(z, r, \tau)\) в стандартном виде [12]
+представим задачу для функции \(N_{d0}(z, r, \tau)\) в стандартном виде:
 \begin{align}
 & \frac{\partial N_{d0}}{\partial\tau} = \frac{\partial}{\partial z}\left[A (\tau , z )\frac{\partial N_{d0}}{\partial z}\right]
 + \frac{1}{r}\frac{\partial}{\partial r}\left[rA(\tau, z)
@@ -171,7 +170,7 @@ A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\
 & G (\tau, z) = \frac{\partial\ln\bar{\varepsilon}(\tau, z )}{\partial\tau},\\
 & g(\tau, z) = \frac{w_{tr}(\tau , z )}{\bar{\varepsilon} (\tau , z )}\exp\int( −\int_0^{E_0} \frac{w_{tr}(\tau′, z )}{\bar{\varepsilon} (\tau′, z)}d\tau′.    
 \end{align}
-Для функций \( \tau (\tau , z ), w_{tr}(\tau , z)\) и \(s(\tau,z)\) используем аппроксимации, описанные в \cite{smolar3}.
+
 Пусть \(\xi_1,\ldots,\xi_n\) -– точки разрыва функции \(\bar{\varepsilon}(\tau , z)\) по отношению к переменной \( z \) (эти точки являются границами слоев). Тогда
 \begin{equation}
 B(\tau, z) = −\frac{1}{w_{tr}(\tau, z)}\sum_{i=1}^{n} \bar{\varepsilon} −1 (\tau ,\xi_i ) \delta ( z − \xi i ) ,    
