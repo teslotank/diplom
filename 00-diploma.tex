@@ -19,6 +19,38 @@
 \geometry{top=1cm}% верхнее поле
 \geometry{bottom=2cm}% нижнее поле
 
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\normalfont}
+\makeatletter 
+\renewcommand*\l@chapter[2]{% 
+  \ifnum \c@tocdepth >\z@ 
+    \addpenalty\@secpenalty 
+    \addvspace{1.0em \@plus\p@}% 
+    \setlength\@tempdima{1.5em}% 
+    \begingroup 
+      \parindent \z@ \rightskip \@pnumwidth 
+      \parfillskip -\@pnumwidth 
+      \leavevmode 
+      \advance\leftskip\@tempdima 
+      \hskip -\leftskip 
+      #1\nobreak\cftdotfill{\cftdotsep} \nobreak\hb@xt@\@pnumwidth{\hss #2}\par 
+    \endgroup 
+  \fi} 
+\renewcommand*\l@section[2]{% 
+  \ifnum \c@tocdepth >\z@ 
+    \addpenalty\@secpenalty 
+    \addvspace{1.0em \@plus\p@}% 
+    \setlength\@tempdima{1.5em}% 
+    \begingroup 
+      \parindent \z@ \rightskip \@pnumwidth 
+      \parfillskip -\@pnumwidth 
+      \leavevmode 
+      \advance\leftskip\@tempdima 
+      \hskip -\leftskip 
+      #1\nobreak\cftdotfill{\cftdotsep} \nobreak\hb@xt@\@pnumwidth{\hss #2}\par 
+    \endgroup 
+  \fi} 
+\makeatother
 \usepackage{setspace}
 
 \usepackage{titlesec}
@@ -44,7 +76,7 @@
 \renewcommand{\bibsection}{%
     \titleformat{\chapter} {\normalfont\filcenter}{}{}{}
     \titlespacing*{\chapter}{\parindent}{*4}{*1}
-    \chapter*{ \bibname \markboth{\bibname}{\bibname}}  }
+    \chapter*{ \bibname \markboth{\bibname}{\bibname}}}
 % Настройка вертикальных и горизонтальных отступов
 \titlespacing*{\chapter}{\parindent}{*4}{*1}
 \titlespacing*{\section}{\parindent}{*4}{*1}
@@ -56,6 +88,9 @@
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
+
+ 
+
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
 \renewcommand{\arraystretch}{1.2}
