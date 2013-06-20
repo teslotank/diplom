@@ -94,7 +94,12 @@
 
 \renewcommand{\small}{\fontsize{12pt}{14.4pt}\selectfont}
 \usepackage{caption}
-\captionsetup{labelsep=period,justification=centering,font=small}
+\DeclareCaptionLabelFormat{figure}{Рисунок #2}
+\DeclareCaptionLabelFormat{table}{Таблица #2}
+\DeclareCaptionLabelSeparator{sep}{~---~}
+\captionsetup{labelsep=sep,justification=centering,font=small}
+\captionsetup[figure]{labelformat=figure}
+\captionsetup[table]{labelformat=table}
 
 \begin{document}
 \onehalfspacing
