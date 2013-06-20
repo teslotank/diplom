@@ -129,12 +129,13 @@ W_f(z,r)=\frac{A_f(z)}{\pi \sigma_f^2(z)} \exp \left(\frac{r^2}{\sigma_f^2(z)}\r
 полуширина которого $\sigma_f(z)=\sqrt{C_2 (z)}$, а амплитуда
 \begin{equation}
 A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\frac{w_{tr} ( E′, z)}{\bar{\varepsilon}(E′, z)}dE′\right) dE.
+\label{eq:16}
 \end{equation}
 Используя представление двумерной \(\delta\)-функции с помощью последовательности непрерывных функций \cite{korn}
 \begin{equation}
 \delta(\vec{r}) = \lim_{\sigma\rightarrow0} \frac{\exp\left(−\frac{r^2}{\sigma^2}\right)}{\pi\sigma^2},
 \end{equation}
-из (\ref{eq:16}) получим
+из (\ref{eq:15}) получим
 \begin{equation}
 \lim_{z\rightarrow0} W_f(z, r) = A_f(0)\delta(\vec{r}),
 \end{equation}
@@ -153,14 +154,16 @@ A_f(z) = \int\limits_0^{E_0}\delta( z − s(E, z))\exp\left(\int\limits_0^{E_0}\
 \frac{\partial N_{d0}}{\partial r}\right] + B (\tau , z )
 \frac{\partial N_{d0}}{\partial z} − G (\tau , z )N_{d0}
 + \\
-& \exp\left( −\frac{r^2}{C_2(z)}\right)\pi C_2(z)\frac{g(\tau, z)}{\bar{\varepsilon} (\tau , z ) }\delta ( z − s(\tau , z )).
+& \exp\left( −\frac{r^2}{C_2(z)}\right)\pi C_2(z)\frac{g(\tau, z)}{\bar{\varepsilon} (\tau , z ) }\delta ( z − s(\tau , z )),
 \nonumber
 \label{eq:19}
 \end{align}
 где
 \begin{align}
 & A (\tau, z) = \frac{1}{\bar{\varepsilon}(\tau, z)w_{tr} (\tau, z)}, \\
-& B (\tau, z) = \frac{1}{w_{tr}(\tau, z)}\frac{\partial\frac{1}{\bar{\varepsilon}(\tau, z)}}{\partial z}, \\
+& B (\tau, z) = \frac{1}{w_{tr}(\tau, z)}\frac{\partial\frac{1}{\bar{\varepsilon}(\tau, z)}}{\partial z},
+\end{align}
+\begin{align}
 & G (\tau, z) = \frac{\partial\ln\bar{\varepsilon}(\tau, z )}{\partial\tau},\\
 & g(\tau, z) = \frac{w_{tr}(\tau , z )}{\bar{\varepsilon} (\tau , z )}\exp\int( −\int_0^{E_0} \frac{w_{tr}(\tau′, z )}{\bar{\varepsilon} (\tau′, z)}d\tau′.    
 \end{align}
@@ -183,6 +186,7 @@ B(\tau, z) = −\frac{1}{w_{tr}(\tau, z)}\sum_{i=1}^{n} \bar{\varepsilon} −1 (
 конечным из вычислительных соображений. Представляется естественным выбрать \( r_\text{макс} \)
 много большим, чем максимальная оценка длины свободного пробега в слоях.
 Граничные и условия Маршака в стандартной форме \cite{keiz} имеют вид
+
 \begin{align}
 & \left[0,5 \frac{N_{d0}}{\bar{\varepsilon}(\tau, z)} − A (\tau , z)\frac{\partial N_{d0}}{\partial z}\right]_{z=0} = 0 ,\\
 & \left[0,5 \frac{N_{d0}}{\bar{\varepsilon}(\tau, z)} − A (\tau , z)\frac{\partial N_{d0}}{\partial z}\right]_{z=z_\text{макс}} = 0 ,\\
