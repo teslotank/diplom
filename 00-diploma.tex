@@ -65,12 +65,12 @@
     {1em}{}
 
 \titleformat{\section}
-    {\normalsize\MakeUppercase}
+    {\normalsize}
     {\thesection}
     {1em}{}
 
 \titleformat{\subsection}
-    {\normalsize\MakeUppercase}
+    {\normalsize}
     {\thesubsection}
     {1em}{}
 \renewcommand{\bibsection}{%
@@ -78,16 +78,9 @@
     \titlespacing*{\chapter}{\parindent}{*4}{*0}
     \chapter*{ \bibname \markboth{\bibname}{\bibname}}}
 % Настройка вертикальных и горизонтальных отступов
-\titlespacing*{\chapter}{\parindent}{*4}{*0}
-\titlespacing*{\section}{\parindent}{*4}{*1}
-\titlespacing*{\subsection}{\parindent}{*4}{*1}
-
-\renewcommand{\theenumi}{\arabic{enumi}}
-\renewcommand{\labelenumi}{\arabic{enumi})}
-\renewcommand{\theenumii}{.\arabic{enumii}}
-\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii})}
-\renewcommand{\theenumiii}{.\arabic{enumiii}}
-\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii})}
+\titlespacing*{\chapter}{\parindent}{*4}{18pt}
+\titlespacing*{\section}{\parindent}{*4}{18pt}
+% \titlespacing*{\subsection}{\parindent}{*4}{*1}
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
 \renewcommand{\arraystretch}{1.2}
@@ -101,6 +94,12 @@
 \captionsetup[figure]{labelformat=figure}
 \captionsetup[table]{labelformat=table}
 
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi})}
+\renewcommand{\theenumii}{.\arabic{enumii}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii})}
+\renewcommand{\theenumiii}{.\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii})}
 \begin{document}
 \onehalfspacing
 \setlength{\parindent}{1.25cm}
